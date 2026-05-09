@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+.faculty {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    padding: 5px;
+}
