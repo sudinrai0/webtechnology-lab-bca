@@ -1,0 +1,19 @@
+header{
+  background-color: #a16161;
+  display: block;
+  padding: 10px;
+}
+main{
+  background-color: rgb(58, 92, 122);
+  display: block;
+  padding: 10px;
+}
+footer{
+  background-color: rgb(243, 243, 69);
+  display: block;
+  padding: 10px;
+}
+div{
+  background-color: rgb(164, 113, 36);
+  padding: 10px;
+}
