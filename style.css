@@ -1,0 +1,81 @@
+/* ===========================
+   Base & Body
+   =========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d6d6d6;
+  font-family: 'Georgia', serif;
+  padding: 30px 20px;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+/* ===========================
+   Gallery Grid
+   =========================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   Polaroid Card
+   =========================== */
+.card {
+  background-color: #fff;
+  padding: 8px 8px 28px 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(1deg);
+  box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.card p {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #444;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ===========================
+   Responsive Breakpoints
+   =========================== */
+@media (max-width: 720px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
